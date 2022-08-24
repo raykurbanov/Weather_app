@@ -42,9 +42,6 @@ function mainWeatherElements() {
         .addClass("weather-data uv")
         .append($("<span>").attr("id", "uv-span"))
     );
-  // .append(
-  //   $("<p>").text(`Air Quality Index (AQI): `).addClass("weather-data air")
-  // );
 }
 
 // Forecast ------------------------------------>
@@ -69,12 +66,10 @@ function getWeather(city) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       let icon = data.current.condition.icon;
       let currentCity = data.location.name;
       let wind = data.current.wind_mph;
       let humidity = data.current.humidity;
-      // let airQuality = data.current.air_quality.co;
       let temp = data.current.temp_f;
       let uv = data.current.uv;
 
@@ -90,7 +85,6 @@ function getWeather(city) {
       $(".temp").text(`Temperature: ${temp}°F`);
       $(".wind").text(`Wind: ${wind}mph / ${data.current.wind_dir}`);
       $(".humidity").text(`Humidity: ${humidity}%`);
-      // $(".air").text(`Air Quality Index (AQI): ${airQuality.toFixed(0)}`);
       $("#uv-span").text(`${uv}`);
 
       for (let i = 0; i < 5; i++) {
