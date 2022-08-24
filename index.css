@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+.rawcontainer {
+  height: 82vh;
+  width: 80%;
+  margin: 25px auto;
+}
+.search {
+  width: 35%;
+  border: 1px solid black;
+}
+
+.data {
+  width: 65%;
+}
+
+#cityHeader {
+  border-bottom: 3px solid black;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+form #cityName {
+  width: 60%;
+}
+
+form button {
+  width: 60%;
+}
+
+#cities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  width: 60%;
+  border: none;
+  background-color: rgb(92, 217, 234);
+  margin: 2px auto;
+}
+
+.btn:hover {
+  background-color: rgb(29, 154, 170);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+#display-weather {
+  width: 100%;
+  height: 65%;
+  border: 1px solid black;
+}
+
+#forecast {
+  width: 100%;
+  height: 35%;
+}
+
+.data {
+  height: 95%;
+}
+#icon {
+  width: 50px;
+  height: 50px;
+  background: url("//cdn.weatherapi.com/weather/64x64/day/113.png") no-repeat
+    center center/cover;
+  display: block;
+  background-position: center center;
+}
+
+#current-city {
+  padding-top: 2px;
+  margin-left: 15px;
+}
+
+.forecastContainer {
+  width: 19%;
+  border: 1px solid black;
+  margin: 5px auto;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+img {
+  height: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: 2px;
+}
+
+p {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.pra-sm {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+#uv-span {
+  background-color: greenyellow;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+
+.conditions {
+  font-size: 24px;
+}
+
+.navbar-light {
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
